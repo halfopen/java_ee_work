@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	<constant name="struts.ui.theme" value="simple"/>
+	<constant name="struts.custom.i18n.resources" value="application"></constant>
+	<package name="default" extends="struts-default" >
+		<action name="login" class="action.LoginAction">
+			<result name="success">loginSuccess.jsp</result>
+			<result name="fail">loginFail.jsp</result>
+		</action>
+		
+		<action name="register" class="action.RegisterAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+		<action name="update" class="action.UpdateAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+		<action name="owner_login" class="action.OwnerLoginAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+		<action name="owner_register" class="action.OwnerRegisterAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+		<action name="edit_car" class="action.EditCarAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+		<action name="edit_owner" class="action.EditOwnerAction">
+			<result name="success">info.jsp</result>
+			<result name="fail">info.jsp</result>
+		</action>
+		
+	</package>
+</struts>    
